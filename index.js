@@ -3,13 +3,16 @@ const QUOTES = [
 	"what's the move?",
 	"what are we focusing on?",
 	"what's the haps?"
-]
+];
 
 const quoteText = document.querySelector("h1");
 let currentQuote = getRandomQuote();
 let currentLetter = 0;
 
-console.log(currentQuote)
+// TODO:
+// 1. keep containers at same position even if no quote.
+// 2. add more quotes
+// 3. make site look good
 
 function getRandomQuote() {
 	return QUOTES[Math.floor(Math.random() * QUOTES.length)]
@@ -40,7 +43,6 @@ function deleteEffect() {
 		currentQuote = getRandomQuote();
 		currentLetter = 0;
 		setTimeout(typingEffect, 2000);
-
 
 		return;
 	}
