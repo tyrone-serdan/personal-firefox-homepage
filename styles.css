@@ -1,3 +1,95 @@
 /* note: delete the unused fonts before hosting */
+:root {
+	--rosewater: #f2d5cf;
+	--mauve: #ca9ee6;
+	--yellow: #e5c890;
+	--base: #292c3c;
+	--pink: #f4b8e4;
+	--text: #c6d0f5;
 
-body {}
+}
+
+body {
+	background-color: var(--base);
+	color: var(--text);
+	font-family: 'JetBrains Mono', monospace;
+}
+
+
+body>h1 {
+	text-align: center;
+	font-size: 2.3rem;
+	color: var(--rosewater);
+}
+
+.big-container {
+	display: flex;
+	justify-content: center;
+}
+
+.container {
+	background-color: #303446;
+	margin: 1.5%;
+	padding: 2%;
+	width: 200px;
+	height: 240px;
+	border-radius: 10px;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container>div>h5 {
+	color: var(--yellow);
+	margin-top: 0;
+	margin-bottom: 1%;
+	text-align: center;
+	font-size: 1.8rem;
+}
+
+.container>div>ul {
+	list-style: none;
+	padding: 0;
+}
+
+.container>div>ul>li::before {
+	content: "> ";
+	font-weight: bold;
+	color: var(--mauve);
+}
+
+.container>div>ul>li>a {
+	font-size: 1.3rem;
+	font-style: italic;
+	color: var(--text);
+	text-decoration: none;
+}
+
+.underline-animation {
+	position: relative;
+}
+
+.underline-animation::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: var(--pink);
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+	transform: scaleX(0)
+}
+
+.underline-animation:hover {
+	color: var(--rosewater)
+}
+
+.underline-animation:hover::after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
