@@ -17,7 +17,7 @@ body {
 }
 
 
-body>h1 {
+.quote-text {
 	height: 100px;
 	line-height: 100px;
 	text-align: center;
@@ -25,12 +25,12 @@ body>h1 {
 	color: var(--rosewater);
 }
 
-.big-container {
+.container {
 	display: flex;
 	justify-content: center;
 }
 
-.container {
+.card {
 	background-color: var(--base);
 	margin: 1.5%;
 	padding: 2%;
@@ -39,13 +39,13 @@ body>h1 {
 	border-radius: 10px;
 }
 
-.container {
+.card {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.container>div>h5 {
+.card-title {
 	color: var(--yellow);
 	margin-top: 0;
 	margin-bottom: 1%;
@@ -53,18 +53,18 @@ body>h1 {
 	font-size: 1.8rem;
 }
 
-.container>div>ul {
+.link-list {
 	list-style: none;
 	padding: 0;
 }
 
-.container>div>ul>li::before {
+.card>div>ul>li::before {
 	content: "> ";
 	font-weight: bold;
 	color: var(--mauve);
 }
 
-.container>div>ul>li>a {
+.link {
 	font-size: 1.3rem;
 	font-style: italic;
 	color: var(--text);
