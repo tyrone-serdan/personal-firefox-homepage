@@ -6,6 +6,7 @@ const QUOTES = [
 ];
 
 const quoteText = document.querySelector("h1");
+const copyrightTag = document.querySelector("p");
 let currentQuote = getRandomQuote();
 let currentLetter = 0;
 
@@ -14,8 +15,18 @@ let currentLetter = 0;
 // 2. add more quotes
 // 3. make site look good
 
+function setupCopyright() {
+	const YEAR = new Date().getFullYear();
+	let text = new String();
+
+	text = `&copy; ${YEAR} Designed by Tyrone Gabriel Serdan.`;
+
+	// innerHTML cause &copy; wont work if innerText.
+	copyrightTag.innerHTML = text;
+}
+
 function getRandomQuote() {
-	return QUOTES[Math.floor(Math.random() * QUOTES.length)]
+	return QUOTES[Math.floor(Math.random() * QUOTES.length)];
 }
 
 function typingEffect() {
@@ -52,4 +63,5 @@ function deleteEffect() {
 
 window.onload = () => {
 	typingEffect();
+	setupCopyright();
 }

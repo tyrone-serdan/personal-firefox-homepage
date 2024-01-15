@@ -3,14 +3,15 @@
 	--rosewater: #f2d5cf;
 	--mauve: #ca9ee6;
 	--yellow: #e5c890;
-	--base: #292c3c;
+	--mantle: #292c3c;
+	--base: #303446;
 	--pink: #f4b8e4;
 	--text: #c6d0f5;
 
 }
 
 body {
-	background-color: var(--base);
+	background-color: var(--mantle);
 	color: var(--text);
 	font-family: 'JetBrains Mono', monospace;
 }
@@ -30,7 +31,7 @@ body>h1 {
 }
 
 .container {
-	background-color: #303446;
+	background-color: var(--base);
 	margin: 1.5%;
 	padding: 2%;
 	width: 200px;
@@ -94,4 +95,10 @@ body>h1 {
 .underline-animation:hover::after {
 	transform: scaleX(1);
 	transform-origin: bottom left;
+}
+
+.copyright {
+	text-align: center;
+	color: var(--mauve);
+	opacity: 0.2;
 }
