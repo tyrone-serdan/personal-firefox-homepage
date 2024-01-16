@@ -10,11 +10,6 @@ const copyrightTag = document.querySelector("p");
 let currentQuote = getRandomQuote();
 let currentLetter = 0;
 
-// TODO:
-// 1. keep containers at same position even if no quote.
-// 2. add more quotes
-// 3. make site look good
-
 function setupCopyright() {
 	const YEAR = new Date().getFullYear();
 	let text = new String();

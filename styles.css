@@ -25,6 +25,26 @@ body {
 	color: var(--rosewater);
 }
 
+.searchbar {
+	text-align: center;
+}
+
+.searchbar>form>input[type=text] {
+	width: 50%;
+	padding: 5px 10px;
+	font-family: 'JetBrains Mono', monospace;
+	font-size: 1.5rem;
+	color: var(--text);
+	background-color: transparent;
+	border: none;
+	border-bottom: 3px solid var(--yellow);
+}
+
+.searchbar>form>input[type=text]:focus {
+	border-bottom: 3px solid var(--pink);
+	outline: none;
+}
+
 .container {
 	display: flex;
 	justify-content: center;
