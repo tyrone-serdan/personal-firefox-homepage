@@ -5,7 +5,7 @@
 	--cardtitle-line: #b8bb26;
 	/* --mantle: #292c3c; UNUSED */
 	--bg: #282828;
-	--focus--anim: #8ec07c;
+	--focus-anim: #8ec07c;
 	--text: #fbf1c7;
 
 }
@@ -81,7 +81,7 @@ body {
 .card>div>ul>li::before {
 	content: "> ";
 	font-weight: bold;
-	color: var(--card-copy);
+	color: var(--cardarrow-copy);
 }
 
 .link {
@@ -119,6 +119,6 @@ body {
 
 .copyright {
 	text-align: center;
-	color: var(--card-copy);
+	color: var(--cardarrow-copy);
 	opacity: 0.2;
 }
