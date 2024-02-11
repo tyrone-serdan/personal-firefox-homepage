@@ -1,17 +1,17 @@
 /* note: delete the unused fonts before hosting */
 :root {
-	--rosewater: #f2d5cf;
-	--mauve: #ca9ee6;
-	--yellow: #e5c890;
-	--mantle: #292c3c;
-	--base: #303446;
-	--pink: #f4b8e4;
-	--text: #c6d0f5;
+	--quote-line: #fbf1c7;
+	--cardarrow-copy: #a89984;
+	--cardtitle-line: #b8bb26;
+	/* --mantle: #292c3c; UNUSED */
+	--bg: #282828;
+	--focus--anim: #8ec07c;
+	--text: #fbf1c7;
 
 }
 
 body {
-	background-color: var(--base);
+	background-color: var(--bg);
 	color: var(--text);
 	font-family: 'JetBrains Mono', monospace;
 }
@@ -22,7 +22,7 @@ body {
 	line-height: 100px;
 	text-align: center;
 	font-size: 2.3rem;
-	color: var(--rosewater);
+	color: var(--quote-line);
 }
 
 .searchbar {
@@ -37,11 +37,11 @@ body {
 	color: var(--text);
 	background-color: transparent;
 	border: none;
-	border-bottom: 3px solid var(--yellow);
+	border-bottom: 3px solid var(--cardtitle-line);
 }
 
 .searchbar>form>input[type=text]:focus {
-	border-bottom: 3px solid var(--pink);
+	border-bottom: 3px solid var(--focus--anim);
 	outline: none;
 }
 
@@ -51,7 +51,7 @@ body {
 }
 
 .card {
-	background-color: var(--base);
+	background-color: var(--bg);
 	margin: 1.5%;
 	padding: 2%;
 	width: 200px;
@@ -66,7 +66,7 @@ body {
 }
 
 .card-title {
-	color: var(--yellow);
+	color: var(--cardtitle-line);
 	margin-top: 0;
 	margin-bottom: 1%;
 	text-align: center;
@@ -81,7 +81,7 @@ body {
 .card>div>ul>li::before {
 	content: "> ";
 	font-weight: bold;
-	color: var(--mauve);
+	color: var(--card-copy);
 }
 
 .link {
@@ -102,14 +102,14 @@ body {
 	height: 2px;
 	bottom: 0;
 	left: 0;
-	background-color: var(--pink);
+	background-color: var(--focus--anim);
 	transform-origin: bottom right;
 	transition: transform 0.25s ease-out;
 	transform: scaleX(0)
 }
 
 .underline-animation:hover {
-	color: var(--rosewater)
+	color: var(--quote-line)
 }
 
 .underline-animation:hover::after {
@@ -119,6 +119,6 @@ body {
 
 .copyright {
 	text-align: center;
-	color: var(--mauve);
+	color: var(--card-copy);
 	opacity: 0.2;
 }
