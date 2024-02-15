@@ -41,7 +41,7 @@ body {
 }
 
 .searchbar>form>input[type=text]:focus {
-	border-bottom: 3px solid var(--focus--anim);
+	border-bottom: 3px solid var(--focus-anim);
 	outline: none;
 }
 
@@ -102,7 +102,7 @@ body {
 	height: 2px;
 	bottom: 0;
 	left: 0;
-	background-color: var(--focus--anim);
+	background-color: var(--focus-anim);
 	transform-origin: bottom right;
 	transition: transform 0.25s ease-out;
 	transform: scaleX(0)
